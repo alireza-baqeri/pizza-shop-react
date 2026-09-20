@@ -29,7 +29,10 @@ function Cart() {
 
   return (
     <div>
-      <Link className="text-sm text-blue-500 hover:text-blue-600" to="/menu">
+      <Link
+        className="text-sm text-blue-500 hover:text-blue-900 hover:underline"
+        to="/menu"
+      >
         &larr; Back to menu
       </Link>
 
@@ -37,7 +40,7 @@ function Cart() {
 
       <div>
         <Link to="/order/new">Order pizzas</Link>
-        <button>Clear cart</button>
+        <button >Clear cart</button>
       </div>
     </div>
   );
