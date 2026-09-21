@@ -103,9 +103,7 @@ export async function action({ request }) {
   };
   const newOrder = await createOrder(order);
   console.log(newOrder);
-
   const errors = {};
-
   if (!isValidPhone(order.phone))
     errors.phone =
       'Please give us your correct phone number. We might need it to contact you.';
