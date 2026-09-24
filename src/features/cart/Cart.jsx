@@ -44,7 +44,7 @@ function Cart() {
         <Button className="mt-6 space-x-2" type="primary" to="/order/new">
           Order pizzas
         </Button>
-        <button>Clear cart</button>
+        <Button type='secondary'>Clear cart</Button>
       </div>
     </div>
   );
