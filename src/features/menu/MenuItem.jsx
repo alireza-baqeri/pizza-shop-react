@@ -1,5 +1,6 @@
-import { formatCurrency } from '../../utils/helpers';
 import Button from '../../ui/Button';
+import { formatCurrency } from '../../utils/helpers';
+
 function MenuItem({ pizza }) {
   const { id, name, unitPrice, ingredients, soldOut, imageUrl } = pizza;
 
@@ -8,7 +9,7 @@ function MenuItem({ pizza }) {
       <img
         src={imageUrl}
         alt={name}
-        className={`h-24 rounded ${soldOut ? 'opacity-80 grayscale' : ''}`}
+        className={`h-24 ${soldOut ? 'opacity-70 grayscale' : ''}`}
       />
       <div className="flex grow flex-col pt-0.5">
         <p className="font-medium">{name}</p>
@@ -19,9 +20,12 @@ function MenuItem({ pizza }) {
           {!soldOut ? (
             <p className="text-sm">{formatCurrency(unitPrice)}</p>
           ) : (
-            <p className="text-sm uppercase text-slate-600">Sold out</p>
+            <p className="text-sm font-medium uppercase text-stone-500">
+              Sold out
+            </p>
           )}
-          <Button type="small">Add to Cart</Button>
+
+          <Button type="small">Add to cart</Button>
         </div>
       </div>
     </li>
