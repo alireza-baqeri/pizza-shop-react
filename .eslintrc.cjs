@@ -6,7 +6,7 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
     "plugin:react-hooks/recommended",
-    "react-app", // این خط اضافه شد تا تنظیماتی که می‌خواستید اعمال شود
+    "react-app", 
   ],
   ignorePatterns: ["dist", ".eslintrc.cjs"],
   parserOptions: { ecmaVersion: "latest", sourceType: "module" },
@@ -19,6 +19,6 @@ module.exports = {
     ],
     "no-unused-vars": "warn",
     "react/prop-types": "off",
-    "react/no-unescaped-entities": "off", // این خط را اضافه کنید
+    "react/no-unescaped-entities": "off", 
   },
 };
